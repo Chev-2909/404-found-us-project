@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 Found Us Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="top-nav">
+      <div class="nav-left">
+        <span>📊 Overview</span>
+        <span>📱 Devices</span>
+        <span>📈 Analytics</span>
+        <span>⚙️ Settings</span>
+      </div>
+      <div class="logo">404 Found Us ⚡</div>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <section class="main-cards">
+      <div class="card ai-prediction">
+        <h2>🤖 AI Bill Prediction</h2>
+        <p>Accuracy: <strong>94%</strong></p>
+        <p>Bill vs Last Month: <strong>+12%</strong></p>
+        <p>Days Left: <strong>5 days</strong></p>
+      </div>
+
+      <div class="card smart-appliances">
+        <h2>🧠 Smart Appliances <button class="add-btn">➕</button></h2>
+        <ul>
+          <li>Fridge - 0.5kW / $0.10/hr</li>
+          <li>AC - 1.2kW / $0.24/hr</li>
+          <li>Washing Machine - 0.8kW / $0.16/hr</li>
+          <li>Oven - 1.5kW / $0.30/hr</li>
+        </ul>
+      </div>
+
+      <div class="card current-usage">
+        <h2>⚡ Current Usage</h2>
+        <p>Real-time Power: <strong>3.6kW</strong></p>
+        <p>Today's Consumption: <strong>8.2kWh</strong></p>
+        <p>Monthly Total: <strong>230kWh</strong></p>
+      </div>
+    </section>
+
+    <section class="live-energy">
+      <h2>🔌 Live Energy Monitoring</h2>
+      <div class="energy-graph">
+        <!-- Chart.js or other graph placeholder -->
+        <canvas id="liveEnergyChart"></canvas>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button>🔄 Refresh Data</button>
+      <button>📤 Export Report</button>
+      <button>📲 Download App</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

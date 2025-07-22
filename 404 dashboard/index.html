@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EnergyWise Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h2>⚡ EnergyWise</h2>
+    <ul>
+      <li>Overview</li>
+      <li>Devices</li>
+      <li>Analytics</li>
+      <li>Settings</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="card" id="current-usage">
+      <h3>Current Usage</h3>
+      <p>Real-time Power: <strong>2.4 kW</strong></p>
+      <p>Today's Consumption: <strong>18.1 kWh</strong></p>
+      <p>Monthly Total: <strong>456 kWh</strong></p>
+    </div>
+
+    <div class="card" id="smart-appliances">
+      <h3>Smart Appliances</h3>
+      <p>LED Lighting: 0.18 kW</p>
+      <p>Water Heater: 1.2 kW</p>
+    </div>
+
+    <div class="card" id="bill-prediction">
+      <h3>AI Bill Prediction</h3>
+      <p>Estimated: <strong>$127.45</strong></p>
+      <p>Accuracy: 85%</p>
+      <p>Days Left: 15</p>
+    </div>
+
+    <div class="card" id="usage-trend">
+      <h3>Usage Trend (7 days)</h3>
+      <canvas id="usageChart" width="400" height="200"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
